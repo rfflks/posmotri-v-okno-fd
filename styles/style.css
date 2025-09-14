@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -48,4 +49,78 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
+}
+
+.content{
+  display: flex;
+  width: 1140px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 133px 30px;
+}
+
+.result{
+  align-items: end;
+  padding-top: 78px;
+  padding-right: 30px;
+}
+
+.content__details{
+  width: 100%;
+  height: 100%;
+  align-content: end;
+}
+
+.content__list-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
+  height: 298px;
+  overflow-y: auto;
+  gap: 30px;
+}
+
+.search-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+
+.content__list{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.result__video-container{
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
+}
+
+.result__video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.content__video-card-thumbnail{
+  height: 103px;
+  min-width: 194;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card-description-container{
+  flex-grow: 1;
 }

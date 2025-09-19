@@ -59,8 +59,8 @@ ol {
   flex-direction: row;
   margin-left: 30px;
   margin-right: 30px;
-  margin-bottom: 133px;
-  margin-top: -7px;
+  margin-bottom: 140px;
+  
 }
 
 .result{
@@ -78,6 +78,7 @@ ol {
   display: flex;
   flex-direction: column;
   height: 298px;
+  width: 399px;
   overflow-y: auto;
   gap: 30px;
 }
@@ -93,7 +94,12 @@ ol {
 .content__list{
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 30px;
+}
+
+.content__list-item{
+  padding-left: 2px;
+  padding-right: 3px;
 }
 
 .result__video-container{
@@ -112,11 +118,9 @@ ol {
 .content__video-card{
   display: flex;
   flex-direction: row;
-  align-items: start;
 }
 
 .content__video-card-thumbnail{
-  padding-right: 3px;
   height: 103px;
   width: 194px;
   object-fit: cover;
@@ -134,11 +138,11 @@ ol {
 }
 
 .title{
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 75px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 69px;
+  line-height: 70.5px;
 }
 
 .content__card-link{
@@ -147,9 +151,12 @@ ol {
 }
 
 .content__video-card-title{
+  overflow: hidden;
+  line-height:35px;
   text-overflow: ellipsis;
   font-weight: 700;
   font-size: 30px;
+  width: 196px;
   text-transform: uppercase;
 }
 
@@ -161,7 +168,60 @@ ol {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight:400;
-  line-height: 16.2px;
+  line-height: 18px;
   line-clamp:1;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__checkbox-list{
+  display: flex;
+  gap:15px;
+}
+
+.search-form__fieldset{
+  border: none;
+  
+}
+
+.search-form__label{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  
+  gap: 5px;
+  border: 1px solid transparent;
+}
+
+.search-form__textfield{
+  background-color: transparent;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  border: none;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  appearance: none;
+}
+
+.search-form__textfield::placeholder{
+  color: rgb(255 255 255 / 0.7);
+}
+
+.search-form__label:has(:focus-visible){
+  outline: 1px solid #FFFFFF;
+}
+
+.search-form__pseudo-checkbox{
+  width: ;
+}
+/*Стилизуем чекбокс*/
